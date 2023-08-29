@@ -1,0 +1,383 @@
+/*
+Theme Name: SparkEducation
+Theme URI: https://sparklewpthemes.com/wordpress-themes/sparkeducation-free-lms-education-theme/
+Author: sparklewpthemes
+Author URI: https://sparklewpthemes.com
+Description: SparkEducation is lightweight education WordPress theme. The theme builds with a focus on speed and Full Site Editing usability. Performance is very important to us so we include default Gutenberg blocks features with counter, progress bar, icon, and more. The theme includes more than 15 patterns that help you to build a site in one click. The theme is fully compatible with LearnPress plugin so you can create an online education Portal, and sell your course online. Also, it’s fully responsive so you don’t have to worry about the mobile and tablet design. Check demo at http: //demo.sparklewpthemes.com/educenter/sparkedu and theme details at https: //sparklewpthemes.com/wordpress-themes/sparkeducation-free-lms-education-theme/ and get free support forum at https://sparklewpthemes.com/support/
+Version: 1.0.1
+Tested up to: 6.2
+Requires PHP: 5.6
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Template: educenter
+Text Domain: sparkeducation
+Tags: left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, custom-logo, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, translation-ready, education,blog, portfolio, wide-blocks, grid-layout
+*/
+body {
+    font-family: 'Poppins', sans-serif;
+    --primary-color: #F5812D;
+    --body-text: #414141;
+    color: var(--body-text);
+}
+
+p {
+    color: var(--body-text);
+}
+
+.general-header .top-header {
+    background-color: transparent;
+    border-bottom: 1px solid #efeded87;
+    color: #000;
+    padding: 5px 15px;
+}
+
+.general-header .top-header ul.quickcontact li,
+.general-header .top-header ul.quickcontact li a,
+.general-header .top-header .right-contact .edu-social li a,
+.general-header .top-header ul.quickcontact li a {
+    color: #000;
+    font-size: 13px;
+}
+
+.general-header .top-header .right-contact .edu-social li a i {
+    background: transparent !important;
+    color: #000;
+}
+
+.general-header .top-header .right-contact ul li {
+    margin-right: 3px;
+    margin-top: unset;
+}
+
+.box-header-nav .main-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box-header-nav .main-menu .page_item a,
+.box-header-nav .main-menu>.menu-item>a {
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 44px;
+}
+
+.box-header-nav .main-menu .page_item.current_page_item>a,
+.box-header-nav .main-menu .page_item.focus>a,
+.box-header-nav .main-menu>.menu-item.focus>a,
+.box-header-nav .main-menu .page_item:hover>a,
+.box-header-nav .main-menu>.menu-item.current-menu-item>a,
+.box-header-nav .main-menu>.menu-item:hover>a {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.block-nav-category .vertical-menu .menu-item.btn,
+.box-header-nav .main-menu .menu-item.btn.btn-primary {
+    background: var(--primary-color);
+    border-radius: 100px;
+}
+
+.block-nav-category .vertical-menu .menu-item.btn.btn-primary a,
+.box-header-nav .main-menu .menu-item.btn.btn-primary a {
+    padding: 2px 25px;
+    color: #fff;
+}
+
+.ed-footer .bottom-footer,
+.ed-footer {
+    background: transparent;
+    color: #000;
+}
+
+.ed-footer .bottom-footer .footer-bottom-left p a,
+.ed-footer .bottom-footer .footer-bottom-right ul li a,
+.ed-footer .bottom-footer a:hover,
+.ed-footer a:hover {
+    color: var(--primary-color);
+}
+
+.ed-footer .bottom-footer .footer-bottom-left {
+    color: inherit;
+}
+
+.ed-footer .bottom-footer {
+    border-top: 1px solid #efeded87;
+}
+
+.ed-footer .ed-col {
+    display: block;
+    margin: 0;
+}
+
+.box-shadow-ripples {
+    position: relative;
+    z-index: 99;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 0 !important;
+    color: #fff;
+    text-align: center;
+    background: var(--wp--preset--color--primary);
+    border-radius: 50%;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    box-shadow: 0 0 16px rgb(255 255 255/50%);
+    cursor: pointer
+}
+
+.box-shadow-ripples:before {
+    position: absolute;
+    content: "";
+    top: -3px;
+    bottom: -3px;
+    left: -3px;
+    right: -3px;
+    border-radius: 50%;
+    box-shadow: 0 0 rgb(255 255 255/20%), 0 0 0 16px rgb(255 255 255/20%), 0 0 0 32px rgb(255 255 255/20%), 0 0 0 48px rgb(255 255 255/20%);
+    animation: ripples 1s linear infinite;
+    animation-play-state: running;
+    opacity: 1;
+    visibility: visible;
+    transform: scale(.8);
+    z-index: 0
+}
+
+.box-shadow-ripples .dashicons a {
+    display: none
+}
+
+@keyframes ripples {
+    to {
+        box-shadow: 0 0 0 16px rgba(255, 255, 255, .2), 0 0 0 32px rgba(255, 255, 255, .2), 0 0 0 48px rgba(255, 255, 255, .2), 0 0 0 64px transparent
+    }
+}
+
+.is-justify-center {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+/** learnpress plugin compatible */
+.lp-user-profile .lp-profile-content-area {
+    padding: 0;
+}
+
+.lp-archive-courses .learn-press-courses .course .course-item .course-content .course-instructor:not(.lp-education-instructor) {
+    display: none;
+}
+
+/** learnpress */
+
+.lp-archive-courses .learn-press-courses .course {
+    border-radius: 0 0 6px 6px;
+}
+
+.lp-archive-courses .learn-press-courses[data-layout="grid"] .course .course-item .course-wrap-thumbnail .course-thumbnail .thumbnail img {
+    border-radius: 6px 6px 0 0;
+}
+
+.lp-archive-courses .learn-press-courses[data-layout="grid"] .course .course-item {
+    box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 6px 6px;
+}
+
+.lp-archive-courses .learn-press-courses[data-layout="grid"] .course .course-item .course-content {
+    text-align: center;
+}
+
+.lp-archive-courses .learn-press-courses[data-layout="grid"] .course .course-item .course-content .course-info .course-footer .course-students .course-students-number,
+.lp-archive-courses .learn-press-courses[data-layout="grid"] .course .course-item .course-content .course-info .course-footer .course-students::before {
+    font-size: 14px;
+}
+
+.course-instructor.lp-education-instructor img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+
+.lp-archive-courses .learn-press-courses[data-layout="list"] .course-instructor.lp-education-instructor {
+    margin-top: -8px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0 !important;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.lp-archive-courses .learn-press-courses[data-layout="grid"] .course-instructor.lp-education-instructor {
+    float: unset !important;
+    margin-top: -36px;
+    position: relative;
+    z-index: 1;
+}
+
+.lp-archive-courses .learn-press-courses .course .course-item .course-content .course-instructor a {
+    color: black;
+}
+
+.lp-archive-courses .learn-press-courses[data-layout="grid"] .course .course-item .course-content .course-info {
+    position: relative;
+}
+
+.lp-archive-courses .learn-press-courses[data-layout="grid"] .course .course-item .course-content .course-info::before {
+    content: '';
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #000;
+    background-color: rgb(0, 0, 0);
+    z-index: 10;
+}
+
+.lp-archive-courses .learn-press-courses[data-layout="list"] .course {
+    box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/** couse single page */
+
+.lp-archive-courses .course-summary .course-summary-content .lp-entry-content.lp-content-area .course-summary-sidebar .course-summary-sidebar__inner {
+    box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+}
+
+.lp-archive-courses .course-summary .course-summary-content .lp-entry-content.lp-content-area .course-summary-sidebar .course-summary-sidebar__inner .course-sidebar-secondary {
+    padding: 0 15px;
+}
+
+
+/** single page breadcrumb */
+
+.single-lp_course .ed-breadcrumb {
+    display: none;
+}
+
+.lp-archive-courses .course-summary .course-summary-content .course-detail-info {
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+.course-summary .course-summary-sidebar.slide-top .course-summary-sidebar__inner {
+    position: relative;
+}
+
+.lp-archive-courses .course-summary .course-summary-content .lp-entry-content.lp-content-area .course-summary-sidebar .course-summary-sidebar__inner .learn-press-course-wishlist {
+    padding: 10px !important;
+}
+
+.lp-archive-courses .course-summary .course-summary-content .lp-entry-content.lp-content-area .course-summary-sidebar .course-summary-sidebar__inner .learn-press-course-wishlist::before {
+    font-size: 16px;
+}
+
+.content-area .lp-user-profile li,
+.content-area .learn-press-profile-course__tab__inner>li {
+    list-style: none;
+}
+
+div.wpcf7 {
+    background-color: inherit;
+}
+
+/*
+ * AboutUs Section
+*/
+
+.edu-press-wrap {
+    display: table;
+    width: 100%;
+}
+
+.edu-press-wrap>* {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.ed-about-us.layout-2 .ed-about-content {
+    position: relative;
+    float: none;
+    padding-left: 0;
+    padding-right: 0;
+    width: auto;
+    padding-right: 30px;
+}
+
+.ed-about-us.layout-2 .ed-about-image {
+    position: relative;
+    float: none;
+    width: 35%;
+    right: 0;
+    bottom: 0;
+}
+
+.ed-about-us.layout-2 .ed-about-list h3.ui-accordion-header {
+    color: #fff;
+    background: #004a8d;
+    margin-bottom: 10px;
+    padding: 10px 35px;
+    font-weight: 400;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+}
+
+.ed-about-us.layout-2 .ed-about-list h3.ui-accordion-header:before {
+    content: '\f067';
+    position: absolute;
+    font-family: 'Font Awesome 5 Free';
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    background: #004a8d;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border: 3px solid #fff;
+    left: -18px;
+    top: 50%;
+    font-weight: 900;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    text-align: center;
+    line-height: 30px;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+}
+
+.ed-about-us.layout-2 .ed-about-list h3.ui-accordion-header.ui-accordion-header-active:before {
+    content: '\f068';
+}
+
+.ed-about-us.layout-2 .ed-about-list h3.ui-accordion-header.ui-state-active {
+    margin-bottom: 0;
+}
+
+.ed-about-us.layout-2 .ed-about-list .ui-accordion-content {
+    display: block;
+    font-size: 16px;
+    padding: 12px 25px;
+    background: #fff;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 16px 2px #cecece70;
+}
+
+.ed-about-us.layout-2.ed-accordin-layout .ed-about-list {
+    padding: 0 15px;
+}

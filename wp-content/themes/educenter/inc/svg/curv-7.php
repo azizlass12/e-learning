@@ -1,0 +1,1 @@
+<svg viewBox="0 0 1000 100" preserveAspectRatio="none"  ><path d="M0,0l1000,100l-1000,0l0,-100Z"></path></svg>

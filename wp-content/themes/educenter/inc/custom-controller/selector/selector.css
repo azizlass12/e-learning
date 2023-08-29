@@ -1,0 +1,66 @@
+.educenter-type-checkbox {
+    margin-top: 10px;
+}
+
+.educenter-type-checkbox label {
+    line-height: 20px;
+    display: block;
+    margin-left: 24px;
+    padding-top: 6px;
+}
+
+.educenter-type-checkbox input[type=checkbox] {
+    margin-right: 8px;
+    margin-left: -24px;
+}
+
+.selector-labels label {
+    display: inline-block;
+    padding: 0 10px 10px 0;
+    position: relative;
+    max-width: 50%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.selector-labels.full-width label {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.selector-labels.half-width label {
+    max-width: 50%;
+    padding: 0 20px 20px 0;
+}
+
+.selector-labels.one-third-width label {
+    max-width: 33.33%;
+    padding: 0 10px 10px 0;
+}
+
+.selector-labels.one-forth-width label {
+    max-width: 25%;
+    padding: 0 10px 10px 0;
+}
+
+.selector-labels label img {
+    vertical-align: middle;
+}
+
+.selector-labels label.selector-selected:after {
+    content: "";
+    height: 25px;
+    width: 25px;
+    right: 0;
+    top: 0;
+    position: absolute;
+    background: url(selected.png) no-repeat right top;
+}
+
+.educenter-type-radio .radio-labels label {
+    display: block;
+    padding: 5px 0;
+}

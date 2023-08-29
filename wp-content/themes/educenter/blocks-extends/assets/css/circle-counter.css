@@ -1,0 +1,26 @@
+.sp-chart {
+    position: relative;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sp-chart canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sp-percent {
+    display: inline-block;
+    line-height: 110px;
+    z-index: 2;
+}
+
+.sp-percent:after {
+    content: '%';
+    margin-left: 0.1em;
+    font-size: 0.8em;
+}

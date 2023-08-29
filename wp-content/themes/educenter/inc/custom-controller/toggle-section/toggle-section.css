@@ -1,0 +1,50 @@
+/* Toggle Section Control*/
+#sub-accordion-panel-educenter_home_panel .customize-info .customize-panel-description {
+    display: block !important;
+}
+
+.control-section-toggle-section .educenter-toggle-section,
+.control-section-sidebar .educenter-toggle-section {
+    text-decoration: none;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.control-section-toggle-section .educenter-toggle-section .dashicons,
+.control-section-sidebar .educenter-toggle-section .dashicons {
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.educenter-section-visible .educenter-toggle-section {
+    color: #929292;
+}
+
+#customize-theme-controls .accordion-section-title.educenter-section-hidden,
+.educenter-section-hidden .educenter-toggle-section,
+#sub-accordion-panel-educenter_home_panel .control-section .educenter-section-hidden.accordion-section-title:before {
+    color: #dcdcdc;
+}
+
+.educenter-toggle-section {
+    float: right
+}
+
+/**
+** Customizer Control css 
+*/
+.customizer-hidden {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    left: -1000px;
+    display: none !important;
+}
+
+#customize-theme-controls .accordion-section-title.educenter-section-hidden,
+.educenter-section-hidden .educenter-toggle-section,
+#sub-accordion-panel-educenter_home_panel .control-section .educenter-section-hidden.accordion-section-title:before {
+    color: #dcdcdc;
+}

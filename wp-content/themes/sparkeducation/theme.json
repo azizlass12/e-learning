@@ -1,0 +1,249 @@
+{
+  "version": 2,
+  "settings": {
+    "appearanceTools": true,
+    "layout": {
+      "contentSize": "750px",
+      "wideSize": "1140px"
+    },
+    "color": {
+      "duotone": [
+        {
+          "colors": [
+            "#000000",
+            "#ffffff"
+          ],
+          "slug": "foreground-and-background",
+          "name": "Foreground and background"
+        },
+        {
+          "colors": [
+            "#000000",
+            "#ffe2c7"
+          ],
+          "slug": "foreground-and-secondary",
+          "name": "Foreground and secondary"
+        },
+        {
+          "colors": [
+            "#000000",
+            "#f6f6f6"
+          ],
+          "slug": "foreground-and-tertiary",
+          "name": "Foreground and tertiary"
+        },
+        {
+          "colors": [
+            "#f5812d",
+            "#ffffff"
+          ],
+          "slug": "primary-and-background",
+          "name": "Primary and background"
+        },
+        {
+          "colors": [
+            "#f5812d",
+            "#ffe2c7"
+          ],
+          "slug": "primary-and-secondary",
+          "name": "Primary and secondary"
+        },
+        {
+          "colors": [
+            "#f5812d",
+            "#f6f6f6"
+          ],
+          "slug": "primary-and-tertiary",
+          "name": "Primary and tertiary"
+        }
+      ],
+      "gradients": [
+        {
+          "slug": "vertical-secondary-to-tertiary",
+          "gradient": "linear-gradient(to bottom,var(--wp--preset--color--secondary) 0%,var(--wp--preset--color--tertiary) 100%)",
+          "name": "Vertical secondary to tertiary"
+        },
+        {
+          "slug": "vertical-secondary-to-background",
+          "gradient": "linear-gradient(to bottom,var(--wp--preset--color--secondary) 0%,var(--wp--preset--color--background) 100%)",
+          "name": "Vertical secondary to background"
+        },
+        {
+          "slug": "vertical-background-to-secondary",
+          "gradient": "linear-gradient(to bottom,var(--wp--preset--color--background) 0%,var(--wp--preset--color--secondary) 100%)",
+          "name": "Vertical background to secondary"
+        },
+        {
+          "slug": "vertical-tertiary-to-background",
+          "gradient": "linear-gradient(to bottom,var(--wp--preset--color--tertiary) 0%,var(--wp--preset--color--background) 100%)",
+          "name": "Vertical tertiary to background"
+        },
+        {
+          "slug": "diagonal-primary-to-foreground",
+          "gradient": "linear-gradient(to bottom right,var(--wp--preset--color--primary) 0%,var(--wp--preset--color--foreground) 100%)",
+          "name": "Diagonal primary to foreground"
+        },
+        {
+          "slug": "diagonal-secondary-to-background",
+          "gradient": "linear-gradient(to bottom right,var(--wp--preset--color--secondary) 50%,var(--wp--preset--color--background) 50%)",
+          "name": "Diagonal secondary to background"
+        },
+        {
+          "slug": "diagonal-secondary-to-background-left",
+          "gradient": "linear-gradient(to bottom left,var(--wp--preset--color--secondary) 50%,var(--wp--preset--color--background) 50%)",
+          "name": "Diagonal secondary to background left"
+        },
+        {
+          "slug": "diagonal-secondary-to-background-right",
+          "gradient": "linear-gradient(to top right,var(--wp--preset--color--secondary) 50%,var(--wp--preset--color--background) 50%)",
+          "name": "Diagonal secondary to background right"
+        },
+        {
+          "slug": "diagonal-background-to-secondary",
+          "gradient": "linear-gradient(to bottom right,var(--wp--preset--color--background) 50%,var(--wp--preset--color--secondary) 50%)",
+          "name": "Diagonal background to secondary"
+        },
+        {
+          "slug": "diagonal-tertiary-to-background",
+          "gradient": "linear-gradient(to bottom right,var(--wp--preset--color--tertiary) 50%,var(--wp--preset--color--background) 50%)",
+          "name": "Diagonal tertiary to background"
+        },
+        {
+          "slug": "diagonal-background-to-tertiary",
+          "gradient": "linear-gradient(to bottom right,var(--wp--preset--color--background) 50%,var(--wp--preset--color--tertiary) 50%)",
+          "name": "Diagonal background to tertiary"
+        }
+      ],
+      "palette": [
+        {
+          "slug": "foreground",
+          "color": "#000",
+          "name": "Foreground"
+        },
+        {
+          "slug": "background",
+          "color": "#fff",
+          "name": "Background"
+        },
+        {
+          "slug": "primary",
+          "color": "#f5812d",
+          "name": "Primary"
+        },
+        {
+          "slug": "secondary",
+          "color": "#3c3ddc",
+          "name": "Secondary"
+        },
+        {
+          "slug": "body-text",
+          "color": "#717171",
+          "name": "Body Text"
+        },
+        {
+          "slug": "text-link",
+          "color": "#000",
+          "name": "Text Link"
+        },
+        {
+          "slug": "border",
+          "color": "#f2f2f2",
+          "name": "Border"
+        },
+        {
+          "slug": "tertiary",
+          "color": "#c3d9e7",
+          "name": "Tertiary"
+        },
+        {
+          "slug": "input-field",
+          "color": "#1c1c1c",
+          "name": "Input Field"
+        },
+        {
+          "slug": "boulder",
+          "color": "#777",
+          "name": "Boulder"
+        },
+        {
+          "slug": "coffee",
+          "color": "#7d6043",
+          "name": "coffee"
+        },
+        {
+          "slug": "cyan",
+          "color": "#25d6a2",
+          "name": "Cyan"
+        },
+        {
+          "slug": "dark-blue",
+          "color": "#1b67cc",
+          "name": "Dark Blue"
+        },
+        {
+          "slug": "sky-blue",
+          "color": "#30b4da",
+          "name": "Sky Blue"
+        },
+        {
+          "slug": "dark-green",
+          "color": "#0fb36c",
+          "name": "Dark Green"
+        },
+        {
+          "slug": "lite-green",
+          "color": "#6ba518",
+          "name": "Lite Green"
+        },
+        {
+          "slug": "purple",
+          "color": "#c74a73",
+          "name": "Purple"
+        },
+        {
+          "slug": "dark-purple",
+          "color": "#9261c6",
+          "name": "Dark Purple"
+        },
+        {
+          "slug": "orange",
+          "color": "#f78550",
+          "name": "Orange"
+        },
+        {
+          "slug": "lite-red",
+          "color": "#f9556d",
+          "name": "Lite Red"
+        },
+        {
+          "slug": "hexadecimal",
+          "color": "#27808c",
+          "name": "Hexadecimal"
+        },
+        {
+          "slug": "pink",
+          "color": "#ff6b98",
+          "name": "Pink"
+        }
+      ]
+    },
+    "styles": {
+      "elements": {
+        "p": {
+          "spacing": {
+            "margin": {
+              "top": 0,
+              "bottom": "0.625rem"
+            }
+          },
+          "typography": {
+            "fontFamily": "var(--wp--preset--font-family--poppins)"
+          },
+          "color": {
+            "text": "#414141"
+          }
+        }
+      }
+    }
+  }
+}

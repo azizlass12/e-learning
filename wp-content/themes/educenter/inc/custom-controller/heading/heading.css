@@ -1,0 +1,30 @@
+.customize-control-repeater .customize-control-title,
+.customize-control-educenter-typography .customize-control-title,
+.educenter-accordion-section-title {
+    display: flex;
+    align-items: center;
+    color: #000;
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.customize-control-repeater .customize-control-title::before,
+.customize-control-educenter-typography .customize-control-title::before,
+.educenter-accordion-section-title:before {
+    /* content: ''; */
+    height: 10px;
+    background: #1977f2;
+    width: 10px;
+    margin-right: 10px;
+}
+
+.customize-control-repeater .customize-control-title::after,
+.customize-control-educenter-typography .customize-control-title::after,
+.educenter-accordion-section-title:after {
+    content: '';
+    height: 10px;
+    background: #1977f2;
+    flex-grow: 1;
+    margin-left: 10px;
+}

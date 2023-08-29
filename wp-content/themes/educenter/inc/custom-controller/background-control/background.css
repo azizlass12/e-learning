@@ -1,0 +1,136 @@
+/*Background Control*/
+.customize-control-background-image .background-image-fields {
+    margin-top: 12px;
+}
+
+.customize-control-background-image .background-image-fields li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.customize-control-background-image .background-image-fields li span {
+    width: 100%;
+}
+
+.customize-control-background-image .background-image-fields li select {
+    width: 50%;
+    height: 32px;
+    margin-top: 9px;
+    position: absolute;
+    right: 3px;
+}
+
+
+/** gradent image */
+/**
+ * Gradient Control
+*/
+.colorpicker,
+.gradient-box .gradient-picker {
+    z-index: 999999;
+}
+
+.gradient-box {
+    border: 1px solid #d6d6d6;
+    padding: 10px;
+}
+
+.gradient-box .gradient-row {
+    margin-bottom: 10px;
+}
+
+.gradient-box .gradient-label {
+    display: block;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.gradient-box .gradient-description {
+    display: block;
+    font-style: italic;
+    line-height: 18px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.customize-control .gradient-box .gradient-spread {
+    width: 45px;
+}
+
+.gradient-box .ClassyGradient {
+    width: 238px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gradient-box .ClassyGradient .info {
+    width: 180px;
+}
+
+.gradient-box .ClassyGradient .info.rightindent .arrow {
+    margin-right: 10px;
+    margin-left: 0;
+    left: auto;
+    right: 0
+}
+
+.gradient-preview {
+    height: 100px;
+    width: 100%;
+}
+
+.gradient-box .ui-widget-content {
+    position: relative;
+    background: #CCC;
+    border: 0;
+    border-radius: 0;
+    height: 4px;
+}
+
+.gradient-box .ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    background: #0073aa;
+    top: 0;
+    height: 100%;
+    left: 0;
+}
+
+.gradient-box .ui-slider-horizontal .ui-slider-handle {
+    border: 0;
+    height: 18px;
+    width: 18px;
+    top: -7px;
+    margin-left: -9px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #EEE;
+    border: 2px solid #0073aa;
+    position: absolute;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    z-index: 2;
+}
+
+.gradient-box .gradient-angle-slider {
+    margin: 12px 10px 30px;
+    background: #CCC
+}
+
+.gradient-box .ui-slider-horizontal .ui-slider-handle span {
+    position: absolute;
+    top: 100%;
+    width: 70px;
+    text-align: center;
+    margin-left: -35px;
+    left: 7px;
+    font-size: 13px;
+}

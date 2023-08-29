@@ -1,0 +1,182 @@
+:root {
+    --progress-blue: #00bbe4;
+    --progress-dark-blue: #5D7582;
+    --progress-gray: #5e7583;
+    --progress-background: #1B252B;
+    --progress-circle-diameter: 20rem;
+    --progress-wrapper-height: calc(var(--progress-circle-diameter) / 2);
+
+}
+
+.is-sp-progressbar-wrapper {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+
+.is-sp-progressbar {
+    background-color: #999999;
+    border-radius: 5px;
+    padding: 0;
+    display: inline-block;
+    transition-duration: 3s;
+    display: flex;
+    margin: 0;
+    width: 0;
+    justify-content: space-between;
+    white-space: nowrap;
+    position: relative;
+
+}
+
+p.is-sp-progressbar[data-style="style2"] span.percent {
+    position: absolute;
+    top: -33px;
+    right: 0;
+    background: #262424;
+    padding: 0px 6px;
+}
+
+p.is-sp-progressbar[data-style="style2"] span.percent:before {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    content: "";
+    border-right: 7px solid #262424;
+    border-bottom: 5px solid transparent;
+}
+
+.progress {
+    position: relative;
+    margin: auto auto;
+    padding: 1rem;
+    width: var(--progress-circle-diameter);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bar-overflow {
+    position: relative;
+    overflow: hidden;
+    width: var(--progress-circle-diameter);
+    height: 10rem;
+}
+
+.layout-circle .bar-overflow {
+    height: var(--progress-circle-diameter);
+}
+
+.bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--progress-circle-diameter);
+    height: var(--progress-circle-diameter);
+    border-radius: 50%;
+    border: 0.5rem solid var(--progress-gray);
+    border-bottom-color: var(--progress-blue);
+    border-right-color: var(--progress-blue);
+
+
+    --rotation: calc(45deg + calc(var(--progress-percent) * 1.8 * 1deg));
+    transform: rotate(var(--rotation));
+
+    transition: transform 2s;
+}
+
+.layout-circle .bar {
+    border-top-color: var(--progress-blue);
+
+}
+
+.info {
+    position: absolute;
+    background-color: var(--progress-blue);
+    color: var(--progress-text-color);
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    min-width: 7.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.info h2 {
+    font-size: 2rem;
+    color: var(--progress-text-color);
+}
+
+.info p {
+    font-size: 0.75rem;
+}
+
+
+
+.info-arrow {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 0px;
+    bottom: 100%;
+    left: 50%;
+}
+
+.info-arrow:after {
+    content: '';
+    border-left: solid transparent 0.5rem;
+    border-right: solid transparent 0.5rem;
+    border-bottom: solid 0.5rem var(--progress-blue);
+    position: absolute;
+    top: -0.5rem;
+    left: -0.5rem;
+    height: 0;
+    width: 0;
+}
+
+
+.min-max {
+    color: var(--progress-gray);
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% + 4rem);
+    margin: 0 -2rem;
+    margin-top: .5rem;
+    padding-left: .75rem;
+}
+
+.circle {
+    --diameter: 1.5rem;
+    height: var(--diameter);
+    width: var(--diameter);
+    border-radius: 50%;
+    background-color: var(--progress-blue);
+    border: 2px solid var(--progress-blue);
+    position: absolute;
+    top: 0.5rem;
+
+
+    transform-origin: 0.75rem 10.5rem;
+
+    --rotation: calc(-90deg + calc(var(--progress-percent) * 1.8 * 1deg));
+    transform: rotate(var(--rotation));
+    transition: transform 2s;
+}
+
+
+.number {
+    position: relative;
+    z-index: 10;
+    transition: transform 2s;
+}
+
+.number:before {
+    display: block;
+
+    min-width: 5ch;
+    content: attr(data-display);
+    transition: transform 2s;
+}

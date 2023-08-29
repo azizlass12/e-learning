@@ -1,0 +1,43 @@
+.has-shadow-dark,
+.has-no-hover-shadow-dark {
+    box-shadow: 0 6px 30px 7px #2125471a;
+    transition: 0.5s;
+}
+
+.has-shadow-dark:hover {
+    box-shadow: 1px 4px 20px -2px #0003;
+    transform: translateY(-8px);
+}
+
+.editor-styles-wrapper .has-shadow-dark:hover {
+    transform: inherit;
+}
+
+.icon-box-margin-top-100 {
+    margin-top: -83px !important;
+}
+
+.sp-overlay-overlap-absolute {
+    position: absolute;
+    transform: translate(5%, -110%);
+    width: 90%;
+    height: 80%;
+}
+
+@media (max-width: 767px) {
+    body .hide-on-mobile {
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    body .hide-on-tablet {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1025px) {
+    body .hide-on-desktop {
+        display: none !important;
+    }
+}

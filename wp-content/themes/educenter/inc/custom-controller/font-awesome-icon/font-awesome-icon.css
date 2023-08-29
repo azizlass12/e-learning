@@ -1,0 +1,95 @@
+/*FontAwesome Icon Styles*/
+.educenter-customizer-icon-box .educenter-icon-box {
+    display: none;
+}
+
+.educenter-customizer-icon-box .educenter-type-icon {
+    overflow: hidden;
+}
+
+.educenter-customizer-icon-box .educenter-selected-icon {
+    background: #F6F6F6;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border: 1px solid #EEE;
+    position: relative;
+    margin-right: 44px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.educenter-customizer-icon-box .educenter-selected-icon span i {
+    line-height: 45px;
+}
+
+.educenter-customizer-icon-box .educenter-selected-icon span {
+    position: absolute;
+    background: #F6F6F6;
+    right: -45px;
+    top: -1px;
+    height: 45px;
+    width: 45px;
+    border: 1px solid #EEE;
+    font-size: 16px;
+}
+
+.educenter-customizer-icon-box .educenter-icon-search {
+    padding: 10px;
+    background: #f7f7f7;
+    border: 1px solid #EEE;
+    border-top: 0;
+}
+
+.educenter-customizer-icon-box .educenter-icon-search select {
+    margin-bottom: 10px;
+}
+
+.educenter-customizer-icon-box .educenter-icon-list {
+    height: 215px;
+    overflow-y: scroll;
+    font-size: 18px;
+    border: 1px solid #EEE;
+    background: #FFF;
+    border-right: 0;
+    border-top: 0;
+    padding-bottom: 4%;
+    display: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    opacity: 1;
+}
+
+.educenter-customizer-icon-box .educenter-icon-list:first-of-type {
+    display: block;
+}
+
+.educenter-customizer-icon-box .educenter-icon-list li {
+    float: left;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #EEE;
+    border-radius: 3px;
+    font-size: 18px;
+    margin: 4px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.educenter-customizer-icon-box .educenter-icon-list li:hover {
+    background: #333;
+    border: 1px solid #333;
+    color: #FFF;
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+}
+
+.educenter-customizer-icon-box .educenter-icon-list li.icon-active {
+    background: #0073aa;
+    border: 1px solid #0073aa;
+    color: #FFF;
+}

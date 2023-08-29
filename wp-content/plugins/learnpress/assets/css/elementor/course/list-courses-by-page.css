@@ -1,0 +1,112 @@
+/**
+* Style widget list courses by page
+*/
+.learn-press-pagination {
+  margin: 20px 0;
+  text-align: center;
+}
+.learn-press-pagination .page-numbers {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  list-style: none;
+}
+.learn-press-pagination .page-numbers > li {
+  display: inline-block;
+  margin: 0;
+}
+.learn-press-pagination .page-numbers > li .page-numbers {
+  float: unset;
+  padding: 0 14px;
+  color: #666;
+  text-decoration: none;
+}
+.learn-press-pagination .page-numbers > li .page-numbers.current {
+  color: var(--lp-primary-color);
+  font-weight: 400;
+}
+.learn-press-pagination .page-numbers > li .page-numbers:hover {
+  color: var(--lp-primary-color);
+}
+
+.list-courses-elm-wrapper .list-courses-elm {
+  padding: 30px 0 0 0;
+  margin: 0;
+  width: 100%;
+}
+.list-courses-elm-wrapper .list-courses-elm.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.list-courses-elm-wrapper .list-courses-elm.list {
+  display: flex;
+  flex-direction: column;
+}
+.list-courses-elm-wrapper .list-courses-elm.list li {
+  display: flex;
+  gap: 20px;
+}
+.list-courses-elm-wrapper .list-courses-elm.list li > * {
+  flex-basis: 50%;
+}
+.list-courses-elm-wrapper .list-courses-elm.list li .course-img,
+.list-courses-elm-wrapper .list-courses-elm.list li img {
+  height: 100%;
+}
+.list-courses-elm-wrapper .list-courses-elm li {
+  list-style: none;
+  background-color: #F5F7F8;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.list-courses-elm-wrapper .list-courses-elm li > div {
+  padding: 10px;
+}
+.list-courses-elm-wrapper .list-courses-elm .course-title {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+.list-courses-elm-wrapper .list-courses-elm .instructor-display-name {
+  font-weight: 600;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+}
+.list-courses-elm-wrapper .list-courses-elm .course-count-lesson,
+.list-courses-elm-wrapper .list-courses-elm .course-item-price {
+  padding-bottom: 10px;
+}
+.list-courses-elm-wrapper .list-courses-elm .course-item-price {
+  color: #356DF1;
+  font-weight: 600;
+  font-size: 18px;
+}
+.list-courses-elm-wrapper .list-courses-elm .origin-price {
+  text-decoration: line-through;
+  font-size: 14px;
+  color: #8392A2;
+  margin-right: 5px;
+}
+.list-courses-elm-wrapper .courses-layouts-display .courses-layouts-display-list {
+  margin: -30px 0 0 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  float: right;
+}
+.list-courses-elm-wrapper .courses-layouts-display .courses-layouts-display-list li {
+  cursor: pointer;
+}
+.list-courses-elm-wrapper .courses-layouts-display .courses-layouts-display-list li.active {
+  color: #356DF1;
+}
+.list-courses-elm-wrapper .courses-btn-load-more {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 30px;
+}

@@ -1,0 +1,224 @@
+.has-sp-icon.material-icons,
+.has-sp-icon.dashicons {
+    display: block;
+}
+
+.has-sp-icon span[data-rich-text-placeholder],
+.has-sp-icon span[data-rich-text-placeholder] {
+    font-size: 0;
+}
+
+.material-icons:after {
+    content: attr(data-icon);
+}
+
+:root {
+    --progress-gray: #ccc;
+    --progress-blue: #00bbe4;
+    --progress-dark-blue: #5D7582;
+    --progress-circle-diameter: 20rem;
+    --progress-wrapper-height: calc(var(--progress-circle-diameter) / 2);
+    --progress-text-color: #000;
+
+}
+
+.is-sp-progressbar-wrapper {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+
+.is-sp-progressbar {
+    background-color: #999999;
+    border-radius: 5px;
+    display: inline-block;
+    transition-duration: 3s;
+    display: flex;
+    margin: 0;
+    min-width: auto;
+    justify-content: space-between;
+    white-space: nowrap;
+
+}
+
+
+.progress {
+    position: relative;
+    margin: auto auto;
+    padding: 1rem;
+    width: var(--progress-circle-diameter);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bar-overflow {
+    position: relative;
+    overflow: hidden;
+    width: calc(var(--progress-circle-diameter) + 1em);
+    height: 10rem;
+}
+
+.layout-circle .bar-overflow {
+    height: calc(var(--progress-circle-diameter) + 1em);
+}
+
+.bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--progress-circle-diameter);
+    height: var(--progress-circle-diameter);
+    border-radius: 50%;
+    border: 0.5rem solid var(--progress-gray);
+    border-bottom-color: var(--progress-blue);
+    border-right-color: var(--progress-blue);
+
+
+    --rotation: calc(45deg + calc(var(--progress-percent) * 1.8 * 1deg));
+    transform: rotate(var(--rotation));
+
+    transition: transform 2s;
+}
+
+.info {
+    position: absolute;
+    background-color: var(--progress-blue);
+    color: var(--progress-text-color);
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    min-width: 7.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.info h2 {
+    font-size: 2rem;
+    color: inherit;
+}
+
+.info p {
+    font-size: 0.75rem;
+    color: var(--progress-text-color);
+}
+
+
+
+.info-arrow {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 0px;
+    bottom: 100%;
+    left: 50%;
+}
+
+.info-arrow:after {
+    content: '';
+    border-left: solid transparent 0.5rem;
+    border-right: solid transparent 0.5rem;
+    border-bottom: solid 0.5rem var(--progress-blue);
+    position: absolute;
+    top: -0.5rem;
+    left: -0.5rem;
+    height: 0;
+    width: 0;
+}
+
+
+.min-max {
+    color: inherit;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% + 4rem);
+    margin: 0 -2rem;
+    margin-top: .5rem;
+    padding-left: .75rem;
+}
+
+.circle {
+    --diameter: 1.5rem;
+    height: var(--diameter);
+    width: var(--diameter);
+    border-radius: 50%;
+    background-color: var(--progress-blue);
+    border: 2px solid var(--progress-blue);
+    position: absolute;
+    top: 0.5rem;
+
+
+    transform-origin: 0.75rem 10.5rem;
+
+    --rotation: calc(-90deg + calc(var(--progress-percent) * 1.8 * 1deg));
+    transform: rotate(var(--rotation));
+    transition: transform 2s;
+}
+
+
+.number {
+    position: relative;
+    z-index: 10;
+    transition: transform 2s;
+}
+
+.number:before {
+    display: block;
+
+    min-width: 5ch;
+    content: attr(data-display);
+    transition: transform 2s;
+}
+
+.sp-position-relative {
+    position: relative;
+}
+
+.sp-position-absolute {
+    position: absolute;
+}
+
+/** circle counter */
+.sp-chart {
+    position: relative;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sp-chart canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sp-percent {
+    display: inline-block;
+    line-height: 110px;
+    z-index: 2;
+}
+
+.sp-percent:after {
+    content: '%';
+    margin-left: 0.1em;
+    font-size: 0.8em;
+}
+
+.is-circle-sp-counter {
+    position: relative;
+    width: fit-content;
+}
+
+.is-circle-sp-counter .block-editor-rich-text__editable {
+    position: absolute;
+    left: 35%;
+    top: 25%;
+    z-index: 33;
+}
+
+/** circle counter */
